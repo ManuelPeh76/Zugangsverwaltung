@@ -90,10 +90,10 @@ npm start
 
 ## 📸 Screenshots
 
-|**Startansicht**|<img src="./images/startansicht.png" width="300">|
+|**Startansicht**|<img src="./src/images/startansicht.png" width="300">|
 |--:|:--|
-|**Nach Eingabe des Master-Passworts**|<img src="./images/passwort.png" width="300">|
-|**Übersicht mit Einträgen, einer davon geöffnet**|<img src="./images/einträge.png" width="300">|
+|**Nach Eingabe des Master-Passworts**|<img src="./src/images/passwort.png" width="300">|
+|**Übersicht mit Einträgen, einer davon geöffnet**|<img src="./src/images/einträge.png" width="300">|
 
 
 ## ⚙️ Build
