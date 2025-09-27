@@ -31,7 +31,7 @@ app.whenReady().then(() => {
 
   const saveJs = async (event, {str, backup}) => {
     let text = "";
-    const license = "/*\nZugangsverwaltung\n\n\tFile: data.js\n\tCopyright © 2025 By Manuel Pelzer\n\tMIT License\n*/\n\n"
+    const license = "/*\nZugangsverwaltung\n\n\tFile: data.js\n\tCopyright © 2025 By Manuel Pelzer\n\tMIT License\n*/\n\n";
     try {
       if (backup) {
         text = await fs.readFile(path.join(__dirname, "data.js"), "utf8");
@@ -55,4 +55,5 @@ app.whenReady().then(() => {
   ipcMain.handle("quit", app.quit);
 
 });
+
 
