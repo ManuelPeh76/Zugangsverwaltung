@@ -1,4 +1,4 @@
-/*  Zugangsverwaltung
+/* Zugangsverwaltung
 
     File: main.js
     Author: Manuel Pelzer
@@ -55,6 +55,7 @@ app.whenReady().then(() => {
   ipcMain.handle("quit", app.quit);
 
 });
+
 
 
 
