@@ -1,4 +1,4 @@
-/*  Zugangsverwaltung
+/* Zugangsverwaltung
 
     File: preload.js
     Author: Manuel Pelzer
@@ -17,3 +17,4 @@ contextBridge.exposeInMainWorld('api', {
   quit: () => ipcRenderer.invoke("quit")
 
 });
+
