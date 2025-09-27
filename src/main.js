@@ -2,6 +2,7 @@
 /*  Zugangsverwaltung
 
     File: main.js
+    Author: Manuel Pelzer
     Copyright © 2025 By Manuel Pelzer
     MIT License
 */
@@ -55,5 +56,6 @@ app.whenReady().then(() => {
   ipcMain.handle("quit", app.quit);
 
 });
+
 
 
