@@ -114,8 +114,10 @@ npm run setup
 Die erstellten Installationsdateien (.exe und .msi, du hast die Wahl) findest du ebenfalls im dist-Ordner, unter /installers.
 
 ## JSFuck
-JSFuck ist ein Tool, das jeglichen Text (oder auch Zahlen, Sonderzeichen etc.) mit diesen sechs Zeichen darstellen kann: []+()!. Und zwar so, dass, im Falle von Javascript-Quellcode, der Javascript-Interpreter (oder ist es ein Parser?) die Zeichen ganz normal verarbeitet, als handelte es sich um ganz normalen Quellcode. Nur lesbar ist er jetzt nicht mehr. 
-Mir ist klar, dass JSFuck kein Allheilmittel ist, um den Quellcode zu verschlüsseln. Dennoch wird kein Laie in der Lage sein, ihn wieder lesbar zu machen. Wer sich mit der Materie auskennt, lässt sich davon sicherlich nicht abschrecken (wo ein Wille, da ein Weg). Ich wollte jedenfalls nichts unversucht lassen, die Verschlüsselung der Passwörter sowie die "kritische" Funktionalität, soweit es meine bescheidenen Möglichkeiten zulassen, von der Außenwelt abzuschotten. 
+JSFuck ist ein Tool, das jeglichen Text (oder auch Zahlen, Sonderzeichen etc.) mit diesen sechs Zeichen darstellen kann: []+()!.<br>
+Und zwar so, dass, im Falle von Javascript-Quellcode, der Javascript-Interpreter (oder ist es ein Parser?) die Zeichen ganz normal verarbeitet, als handelte es sich um ganz normalen Quellcode. Nur lesbar ist er jetzt nicht mehr.<br>
+Mir ist klar, dass JSFuck kein Allheilmittel ist, um den Quellcode zu verschlüsseln. Dennoch wird kein Laie in der Lage sein, ihn wieder lesbar zu machen. Wer sich mit der Materie auskennt, lässt sich davon sicherlich nicht abschrecken (wo ein Wille, da ein Weg).<br>
+Ich wollte jedenfalls nichts unversucht lassen, die Verschlüsselung der Passwörter sowie die "kritische" Funktionalität, soweit es meine bescheidenen Möglichkeiten zulassen, von der Außenwelt abzuschotten.<br>
 Soweit meine Beweggründe zur Verwendung von JSFuck.
 
 ## 📜 Lizenz
