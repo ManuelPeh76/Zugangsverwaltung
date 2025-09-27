@@ -1,0 +1,22 @@
+{
+  "name": "zugangsverwaltung",
+  "version": "1.0.0",
+  "main": "./src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . zugangsverwaltung --platform win32 --arch x64 --out dist/",
+    "setup": "electron-installer-windows --src dist/zugangsverwaltung-win32-x64/ --dest dist/installers/"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Manuel Pelzer",
+  "license": "MIT",
+  "description": "Eine einfache Offline-Verwaltung für Zugangsdaten.",
+  "devDependencies": {
+    "electron": "^37.2.3",
+    "electron-installer-windows": "*",
+    "electron-packager": "*",
+    "electron-prebuilt": "*"
+  }
+}

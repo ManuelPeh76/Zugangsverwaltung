@@ -1,0 +1,329 @@
+/*  Zugangsverwaltung
+
+    File: style.css
+    Author: Manuel Pelzer
+    Copyright © 2025 By Manuel Pelzer
+    MIT License
+*/
+* {
+  scrollbar-width: none;
+  border: 0;
+  font-family: 'Fira Code', Roboto, monospace;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+@page {
+  margin: 1cm;
+}
+
+body {
+  height: fit-content;
+  width: 100vw;
+  color: #ddd;
+  user-select: none;
+  background: linear-gradient(180deg, #1f2937, #4b5563);
+  background-attachment: fixed;
+  color: #ddd;
+  margin: 0;
+  padding: 0;
+  border-left: #4b5563 1px solid;
+  border-right: #4b5563 1px solid;
+}
+  
+.head {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #355599;
+  border-top: #5282e9 2px solid;
+  border-left: #5282e9 2px solid;
+  border-right: #5282e9 2px solid;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 1;
+}
+
+.titlebar {
+  display: grid;
+  grid-template-columns: 1fr 40px 40px 40px 5px;
+  grid-template-rows: 1fr;
+  gap: 0px 5px;
+}
+
+.title {
+  display: grid;
+  justify-content: start;
+  align-items: center;
+  grid-area: 1 / 1 / 2 / 2;
+  grid-auto-flow: column;
+  height: 100%;
+  width: 100%;
+  padding-left: 20px;
+  font-size: 18px;
+  z-index: 1;
+  app-region: drag;
+  font-variant: small-caps;
+}
+
+.closer, .maximizer, .minimizer {
+  justify-self: center;
+  align-self: center;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+  
+  transition: background-color 0.2s ease;
+  z-index: 1;
+}
+
+.maximizer:hover, .minimizer:hover {
+  background-color: #5282e9;
+  border: #4b5563 1px solid;
+}
+
+.closer:hover {
+  background-color: #c51111;
+  border: #4b5563 1px solid;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+  "content";
+  padding-top: 50px;
+}
+
+.content {
+  justify-self: center;
+  align-self: center;
+  grid-area: 2 / 1 / 4 / 5;
+  width: 90%;
+  height: 100%;
+  grid-area: content;
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-auto-flow: column;
+  column-gap: 5px;
+  font-size: 18px;
+  font-variant: small-caps;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 30px;
+  background-color: #1f2937;
+  border-bottom: #4b5563 1px solid;
+  border-left: #4b5563 1px solid;
+  border-right: #4b5563 1px solid;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+}
+
+.footer a {
+  color: #ddd;
+  text-decoration: none;
+}
+svg {
+  fill: #ddd;
+  stroke: #ddd;
+  color: #111827;
+}
+
+svg.electron {
+  margin: auto 0.5em;
+  width: 20px;
+  height: 20px;
+}
+
+.closer svg, .maximizer svg, .minimizer svg {
+  transform: translateY(-2px);
+}
+
+input {
+  user-select: auto;
+}
+
+.wrap {
+  padding: 20px;
+}
+
+.box {
+  background-color: #444;
+  border: 1px #ddd solid;
+  border-radius: 10px;
+  padding: 50px 20px 20px 20px;
+}
+
+.box div:first-child {
+  position: relative;
+  top: -25px;
+}
+
+div.entry {
+  overflow: auto;
+  transition: all 400ms;
+}
+
+.hidden {
+  height: 0;
+} 
+
+.form-hidden {
+  top: -3000px !important;
+  left: -3000px !important;
+}
+
+.right {
+  float: right;
+}
+
+.center {
+  text-align: center;
+}
+
+.right a {
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+.add {
+  display: block;
+  width: 800px;
+  background-color: #555;
+  position: fixed;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  border: #ddd 1px solid;
+  border-radius: 10px;
+  transition: opacity 500ms linear;
+}
+
+.add-big {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 800px;
+  background-color: #555;
+  left: 50vw;
+  transform: translateX(-50%);
+  border: #ddd 1px solid;
+  border-radius: 10px;
+  transition: opacity 500ms linear;
+  z-index: 1;
+}
+
+h1 {
+  background-color: #555;
+  border: transparent 1px solid;
+  border-radius: 6px;
+  padding: 3px;
+  transition: all 50ms;
+}
+
+#editform label,
+#addform label {
+  margin: 3px 0;
+  display: inline-block;
+  width: 35%;
+  text-align: right;
+  padding-right: 5px;
+}
+
+#editform input,
+#addform input {
+  margin: 3px 0;
+  display: inline-block;
+  width: 60%;
+  padding: 0;
+}
+
+.head-button {
+  padding: 4px;
+  margin: 4px 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  background-color: #555;
+}
+
+.w {
+  display: inline-block;
+}
+
+.edit {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.smooth-out {
+  transition: opacity 0.6s;
+  opacity: 0;
+}
+
+.element-id {
+  display: inline-block;
+  background: #333;
+  border: #fff 1px solid;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.activeEl {
+  border-color: #fff;
+}
+
+.header {
+
+  font-size: 48px;
+  padding: 8px 0;
+  border-top: #fff 1px solid;
+  border-bottom: #fff 1px solid;
+  margin-top: 20px;
+}
+
+.bac {
+  display: block;
+  position: relative;
+  top: 30px;
+  width: fit-content;
+}
+
+.help {
+  background-color: #555;
+  position: fixed;
+  top: -100vh;
+  left: -100vw;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  width: 1024px;
+  max-height: 80vh;
+  border: #ddd 1px solid;
+  border-radius: 10px;
+  padding: 20px 10px 50px 10px;
+  transition: opacity 500ms linear;
+  overflow: scroll;
+}
+
+.help-button {
+  padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+}
