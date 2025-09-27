@@ -104,7 +104,7 @@ npm run build
 erledigt das. Danach befindet sich die App im Ordner zugangsverwaltung/dist.
 
 ## 📦 Installer
-Unter Windows kannst du einen Installer erstellen lassen, mit dem die App ohne weitere Angaben nach Doppelklick unter `C:\Users\<Benutzername>\AppData\Local\zugangsverwaltung` installiert wird.
+Unter Windows kannst du einen Installer erstellen lassen, mit dem die App ohne weitere Angaben nach Doppelklick unter<br>`C:\Users\<Benutzername>\AppData\Local\zugangsverwaltung` installiert wird.
 ```bash
 npm run build
 
