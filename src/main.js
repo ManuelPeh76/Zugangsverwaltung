@@ -34,7 +34,7 @@ app.whenReady().then(() => {
     const license = "/*\nZugangsverwaltung\n\n\tFile: data.js\n\tCopyright © 2025 By Manuel Pelzer\n\tMIT License\n*/\n\n"
     try {
       if (backup) {
-        text = await fs.readFile("src/data.js", "utf8");
+        text = await fs.readFile(path.join(__dirname, "data.js"), "utf8");
         text = text.replace(license, "");
         let t = text./*replace(/(\/\*|\/\/|\*\/)/g, "").*/trim().split("\n").map(e => "// " + e.trim()).join("\n");
         text = `/* Backup vom ${new Date().toLocaleString("de-DE", { dateStyle: "short", timeStyle: "short" })} */\n` + t + "\n\n";
@@ -55,3 +55,4 @@ app.whenReady().then(() => {
   ipcMain.handle("quit", app.quit);
 
 });
+
