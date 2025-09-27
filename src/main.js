@@ -1,4 +1,3 @@
-
 /*  Zugangsverwaltung
 
     File: main.js
@@ -56,6 +55,7 @@ app.whenReady().then(() => {
   ipcMain.handle("quit", app.quit);
 
 });
+
 
 
 
