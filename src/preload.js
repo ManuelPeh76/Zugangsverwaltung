@@ -1,4 +1,3 @@
-
 /*  Zugangsverwaltung
 
     File: preload.js
@@ -16,4 +15,5 @@ contextBridge.exposeInMainWorld('api', {
   maximize: () => ipcRenderer.invoke("maximize"),
   unmaximize: () => ipcRenderer.invoke("unmaximize"),
   quit: () => ipcRenderer.invoke("quit")
+
 });
