@@ -33,7 +33,7 @@ npm start
 
 - Eingabe erfolgt unsichtbar (keine Anzeige während der Eingabe).
 
-- Nach erfolgreicher Eingabe bleiben die Optionen sichtbar, bis die App den Fokus verliert.
+- Nach erfolgreicher Eingabe erscheinen die Optionen und bleiben sichtbar, bis die App den Fokus verliert.
 
 #### Master-Passwort ändern
 - Strg + N → Änderungsmodus starten
