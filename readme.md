@@ -4,8 +4,8 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-stable-success.svg)
 
-Ein minimalistischer Passwort-Manager, der seine Funktionen erst nach Eingabe eines **Master-Passworts** freischaltet.  
-Die App speichert deine Einträge verschlüsselt und ermöglicht Export/Import sowie eine einfache Verwaltung.
+Ein minimalistischer Passwort-Manager, der seine Funktionen erst nach Eingabe eines **Master-Passworts** freischaltet.   
+Die App speichert deine Einträge verschlüsselt und ermöglicht Export/Import sowie eine einfache Verwaltung.  
 Die App basiert auf Electron und verwendet JSFuck im Renderer.
 
 ---
@@ -71,19 +71,21 @@ npm start
 |Backspace (Änderungsmodus)|Letztes Zeichen löschen|
 |Enter (Änderungsmodus)|Neues Passwort übernehmen|
 
-## 🖥️ Menü & Funktionen
-#### Headerleiste
-- Import → Daten aus JSON-Datei importieren (überschreibt bestehende Daten)
+## 🔘 Buttons der Headerleiste
+|Option|Beschreibung|
+|---|---|
+|Import|Daten aus JSON-Datei importieren (überschreibt bestehende Daten)|
+|Export|Daten in JSON-Datei exportieren|
+|Speichern|Änderungen dauerhaft sichern|
+|Neu|Neuen Eintrag hinzufügen|
+|Wiederherstellen|Entfernte Einträge anzeigen und wiederherstellen oder endgültig löschen|
+|?|Hilfe anzeigen|
 
-- Export → Daten in JSON-Datei exportieren
-
-- Speichern → Änderungen dauerhaft sichern
-
-- Neu → Neuen Eintrag hinzufügen
-
-- Wiederherstellen → Entfernte Einträge anzeigen und wiederherstellen/löschen
-
-- ? → Hilfe anzeigen
+## ⚙️ Optionen der Einträge
+|Option|Beschreibung|
+|---|---|
+|Bearbeiten|Diesen Eintrag bearbeiten|
+|Entfernen|Diesen Eintrag aus der Liste entfernen.<br>Er wird nicht gelöscht, sondern nur inaktiv gesetzt.<br>Im Menü 'Wiederherstellen' findet man entfernte Einträge wieder.|
 
 #### Weitere Bedienung:
 - Klicke auf einen Eintragsnamen, um Details ein- oder auszublenden.
@@ -91,11 +93,14 @@ npm start
 
 ## 📸 Screenshots
 
-|**Startansicht**|<img src="./src/images/startansicht.png" width="300">|
-|--:|:--|
-|**Nach Eingabe des Master-Passworts**|<img src="./src/images/passwort.png" width="300">|
-|**Übersicht mit Einträgen, einer davon geöffnet**|<img src="./src/images/einträge.png" width="300">|
-
+**Startansicht**  
+<img src="./src/images/startansicht.png" width="300"> 
+ 
+**Nach Eingabe des Master-Passworts**  
+<img src="./src/images/passwort.png" width="300"> 
+ 
+**Übersicht mit Einträgen, einer davon geöffnet**  
+<img src="./src/images/einträge.png" width="300"> 
 
 ## ⚙️ Build
 Um die App als Standalone-App zu benutzen, muss sie gepackt werden.
