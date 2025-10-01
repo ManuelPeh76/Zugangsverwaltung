@@ -1,102 +1,47 @@
-\# 🔑 Passwort-Manager App
+# 🔑 Passwort-Manager App
 
+![Version](https://img.shields.io/badge/version-1.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Status](https://img.shields.io/badge/status-stable-success.svg)
 
-
-!\[Version](https://img.shields.io/badge/version-1.0-blue.svg)
-
-!\[License](https://img.shields.io/badge/license-MIT-green.svg)
-
-!\[Status](https://img.shields.io/badge/status-stable-success.svg)
-
-
-
-A minimalist password manager that unlocks its features only after entering a \*\*master password\*\*.
+A minimalist password manager that unlocks its features only after entering a **master password**.
 
 The app stores your entries encrypted and allows for export/import and easy management.
 
-The app is based on Electron and uses JSFuck in its renderer.
-
+The app is based on Electron and uses JSFuck in its renderer.
 ---
 
+## 🚀 Installation
 
-
-\## 🚀 Installation
-
-
-
-Clone the repository and install the dependencies:
-
-```bash
-
+Clone the repository and install the dependencies:
+```bash
 git clone https://github.com/ManuelPeh76/Zugangsverwaltung.git
-
-
 
 cd Zugangsverwaltung
 
-
-
-npm install
-
+npm install
 ```
 
-
-
-\## 🎬 Start the app
-
-
-
-```bash
-
-npm start
-
+## 🎬 Start the app
+```bash
+npm start
 ```
 
+## 🔐 Master Password
+- Default: secret
+- Input is invisible (no display during input).
+- Once entered successfully, the options appear and remain visible until the app loses focus.
 
+#### Change Master Password
+- CTRL + N → Start password change mode
+- Enter new password (invisible)
+- Enter → Apply
+- Escape → Cancel
 
-\## 🔐 Master Password
-
-\- Default: secret
-
-
-
-\- Input is invisible (no display during input).
-
-
-
-\- Once entered successfully, the options appear and remain visible until the app loses focus.
-
-
-
-\#### Change Master Password
-
-\- CTRL + N → Start password change mode
-
-
-
-\- Enter new password (invisible)
-
-
-
-\- Enter → Apply
-
-
-
-\- Escape → Cancel
-
-
-
-\#### ⚠️ Important:
-
-\- The master password is not stored in a file.
-
-
-
-\- If you forget, all your entries will be lost.
-
-
-
-\- In the app it is only cached in base64 encoding.
+#### ⚠️ Important:
+- The master password is not stored in a file.
+- If you forget, all your entries will be lost.
+- In the app it is only cached in base64 encoding.
 
 
 
