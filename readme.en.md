@@ -1,7 +1,7 @@
 # 🔑 Passwort-Manager App
 
-![Version](https://img.shields.io/badge/version-1.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Version](https://img.shields.io/badge/version-1.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-stable-success.svg)
 
 A minimalist password manager that unlocks its features only after entering a **master password**.
