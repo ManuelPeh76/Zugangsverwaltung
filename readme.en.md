@@ -67,7 +67,7 @@ npm start
 | Backspace (change mode) | Delete last character |
 | Enter (change mode) | Apply new password |
 
-## 🖥️ Header Bar
+## 🖥️ Buttons of the Header Bar
 | Button | Function |
 | --- | --- |
 | Import | Import data from a JSON file (overwrites existing data) |
@@ -112,5 +112,6 @@ So much for my reasons for using JSFuck. Nevertheless, I put the original source
 
 ## 📜 License
 This project is licensed under the MIT License.
+
 
 
