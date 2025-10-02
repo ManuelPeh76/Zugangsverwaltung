@@ -56,7 +56,7 @@ npm start
 - Passwords \& registration keys additionally base64 encoded.
 
 ## ⌨️ Keyboard Shortcuts
-| Key | Function |
+| Key | Description |
 | --- | --- |
 | ⬆️ ⬇️ | Go to previous/next entry|
 | ⬅️ ➡️ | Expand/collapse details|
@@ -68,7 +68,7 @@ npm start
 | Enter (change mode) | Apply new password |
 
 ## 🖥️ Buttons of the Header Bar
-| Button | Function |
+| Option | Description |
 | --- | --- |
 | Import | Import data from a JSON file (overwrites existing data) |
 | Export | Export data to a JSON file |
@@ -112,6 +112,7 @@ So much for my reasons for using JSFuck. Nevertheless, I put the original source
 
 ## 📜 License
 This project is licensed under the MIT License.
+
 
 
 
